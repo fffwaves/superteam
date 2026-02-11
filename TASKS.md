@@ -9,11 +9,11 @@
 ## Phase 1: Research + Design (Days 1-2)
 
 ### 1. Research Agent Needs on Solana
-- [ ] 1.1 Analyze what AI agents need to do safely on Solana (transactions, risks, execution)
-- [ ] 1.2 Document common use cases (portfolio tracking, yield farming, trading, risk monitoring)
-- [ ] 1.3 Identify gaps in existing tools (why no agent-first SDK exists)
-- [ ] 1.4 Decision: What protocols to support first? (Jupiter, Marinade, Orca, Magic Eden, Raydium)
-- [ ] 1.5 Log research findings + decisions in build-log.md
+- [x] 1.1 Analyze what AI agents need to do safely on Solana (transactions, risks, execution)
+- [x] 1.2 Document common use cases (portfolio tracking, yield farming, trading, risk monitoring)
+- [x] 1.3 Identify gaps in existing tools (why no agent-first SDK exists)
+- [x] 1.4 Decision: What protocols to support first? (Jupiter, Marinade, Orca, Magic Eden, Raydium)
+- [x] 1.5 Log research findings + decisions in build-log.md
 
 ### 2. Design Modular Architecture
 - [ ] 2.1 Design SDK module structure (core, agents, dashboard)
