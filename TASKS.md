@@ -16,18 +16,18 @@
 - [x] 1.5 Log research findings + decisions in build-log.md
 
 ### 2. Design Modular Architecture
-- [ ] 2.1 Design SDK module structure (core, agents, dashboard)
-- [ ] 2.2 Design transaction parser module (what data structures, what outputs)
-- [ ] 2.3 Design risk detector module (what patterns to detect, confidence scoring)
-- [ ] 2.4 Design safe executor module (confirmation flow, guardrails, simulation)
-- [ ] 2.5 Design decision framework (structured logging, reasoning capture)
-- [ ] 2.6 Create architecture diagram + module contracts
+- [x] 2.1 Design SDK module structure (core, agents, dashboard)
+- [x] 2.2 Design transaction parser module (what data structures, what outputs)
+- [x] 2.3 Design risk detector module (what patterns to detect, confidence scoring)
+- [x] 2.4 Design safe executor module (confirmation flow, guardrails, simulation)
+- [x] 2.5 Design decision framework (structured logging, reasoning capture)
+- [x] 2.6 Create architecture diagram + module contracts
 
 ### 3. Select Initial Protocols + Create Breakdown
-- [ ] 3.1 Choose 5 protocols to support (Jupiter swaps, Marinade staking, Orca liquidity, Magic Eden NFTs, Raydium pools)
-- [ ] 3.2 Map instruction patterns for each protocol
-- [ ] 3.3 Document protocol-specific risks + detection rules
-- [ ] 3.4 Create task breakdown + estimate effort per module
+- [x] 3.1 Choose 5 protocols to support (Jupiter swaps, Marinade staking, Orca liquidity, Magic Eden NFTs, Raydium pools)
+- [x] 3.2 Map instruction patterns for each protocol
+- [x] 3.3 Document protocol-specific risks + detection rules
+- [x] 3.4 Create task breakdown + estimate effort per module
 
 ---
 
