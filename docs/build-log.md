@@ -352,7 +352,38 @@ Proposal sent to Telegram. Awaiting user direction. 4h auto-build window applies
 
 **Next Tier 2 candidates (still open):**
 - [ ] 🟡 npm publish — needs npm token configured (`npm adduser`)
-- [ ] 🟡 Alert management UI (configure, mute, track alerts)
+- [x] 🟡 Alert management UI (configure, mute, track alerts) ✅ Feb 20
 - [ ] 🟡 Settings UI (thresholds, confirmation preferences)
 - [ ] 🟡 Custom analyzer framework (extensibility)
+- [ ] 🟡 Autonomous rebalancing in Safe Executor
+
+---
+
+## Session: Feb 20, 2026 — 02:01 UTC (Autonomous work)
+
+**Status:** All Tier 1 complete. No TASKS.md items. Auto-building Tier 2.
+
+### Built: Alert Management Panel (Tier 2 🟡)
+
+**Decision:** npm publish still blocked (no npm token). Performance chart shipped last session. Next highest-value Tier 2: Alert Management UI. Rationale: demonstrates agent→user feedback loop, interactive engagement for judges, zero new dependencies, well-scoped.
+
+**What shipped:**
+- `packages/dashboard/components/AlertManagement.tsx` — 428 lines, fully interactive React component
+- Three-tab UX: **Active** | **History** | **Configure**
+- Active tab: filter by severity (all/critical/high/medium/low), per-alert mute (1h/4h/24h/1w), resolve, expand for action details
+- History tab: resolved alerts archive with expand-to-detail
+- Configure tab: 7 alert rules with enable/disable toggles + threshold sliders (whale min count, concentration %, slippage %, min APY %)
+- Mute state with countdown display ("Muted · 3h 47m")
+- "Resolve All" batch action
+- 5 seeded alerts (2 medium, 1 low resolved, 1 high rug risk, 1 low yield opportunity) for demo richness
+- Badge type error fixed (no `secondary` variant in this design system → used `outline`)
+- Dashboard: AlertManagement + RiskAssessmentPanel side-by-side in 2-col grid
+- Build verified: `next build` passes, 22.2kB page size (+3.4kB), 0 type errors
+
+**Commit:** `88661e7` — pushed to `master`
+
+**Remaining Tier 2 candidates:**
+- [ ] 🟡 npm publish — still needs npm token
+- [ ] 🟡 Settings UI (thresholds, confirmation preferences)
+- [ ] 🟡 Custom analyzer framework (extensibility for community)
 - [ ] 🟡 Autonomous rebalancing in Safe Executor
