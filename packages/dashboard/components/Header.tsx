@@ -22,6 +22,10 @@ export function Header() {
 
           {/* Status pill */}
           <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/10 px-3 py-1 sm:flex">
+              <span className="text-[11px] text-yellow-400/80">Demo Mode</span>
+              <span className="text-[10px] text-slate-500">· realistic mock data</span>
+            </div>
             <div className="hidden items-center gap-2 rounded-full border border-solana-border bg-slate-900 px-3 py-1 sm:flex">
               <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-solana-teal" />
               <span className="text-[11px] text-slate-400">3 agents live</span>
